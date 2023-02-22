@@ -9,12 +9,12 @@
   transition: transform 0.2s cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header .login {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   width: inherit;
   max-width: 1200px;
   margin: 10px auto 10px auto;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
 }
 .header .login .toput {
   display: inline-flex;
@@ -23,6 +23,8 @@
 }
 .header .login .toput a {
   color: white;
+  font-size: 13px;
+  font-weight: 400;
 }
 .header .login .toput .otis {
   display: flex;
@@ -41,11 +43,12 @@
 }
 .header .login .register .waring a {
   color: white;
+  font-size: 13px;
 }
 .header .logo {
   width: inherit;
   max-width: 1200px;
-  margin: 20px auto 20px auto;
+  margin: 5px auto 5px auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -55,12 +58,13 @@
   align-items: center;
 }
 .header .logo .otis-logo img {
-  width: 100px;
+  width: 90px;
   height: 100%;
   border-radius: 80px;
 }
 .header .logo .otis-logo h1 {
-  font-size: 70px;
+  font-size: 80px;
+  font-family: "Parisienne", cursive;
 }
 .header .logo .search {
   display: flex;
@@ -86,12 +90,7 @@
   display: flex;
   flex: 1;
 }
-.header
-  .logo
-  .search
-  .otis-searchbar
-  .otis-searchbar__main
-  .otis-searchbar-input {
+.header .logo .search .otis-searchbar .otis-searchbar__main .otis-searchbar-input {
   background-color: #fff;
   border-color: #fff;
   display: flex;
@@ -100,13 +99,7 @@
   padding: 0 0.625rem;
   position: relative;
 }
-.header
-  .logo
-  .search
-  .otis-searchbar
-  .otis-searchbar__main
-  .otis-searchbar-input
-  .otis-input {
+.header .logo .search .otis-searchbar .otis-searchbar__main .otis-searchbar-input .otis-input {
   display: flex;
   flex: 1;
   align-items: center;
@@ -119,7 +112,7 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  height: 34px;
+  height: 35px;
   padding: 0 15px;
   min-width: 60px;
   max-width: 190px;
@@ -129,15 +122,10 @@
   background: #fb5533;
   color: #fff;
 }
-.header
-  .logo
-  .search
-  .otis-searchbar
-  .otis-searchbar__search-button
-  .otis-svg-icon {
+.header .logo .search .otis-searchbar .otis-searchbar__search-button .otis-svg-icon {
   display: inline-block;
-  width: 1em;
-  height: 1em;
+  width: 15px;
+  height: 15px;
   fill: currentColor;
   position: relative;
   cursor: pointer;
@@ -149,7 +137,7 @@
 }
 .header .logo .shop {
   display: flex;
-  align-items: center;
+  margin-top: -20px;
   justify-content: center;
   width: 50px;
 }
@@ -162,7 +150,7 @@
   border-radius: 10px;
 }
 .home-page .section .magintop {
-  margin-top: 200px;
+  margin-top: 180px;
   width: inherit;
   max-width: 1200px;
 }
@@ -188,4 +176,52 @@
   width: 40px;
   height: 40px;
   margin: auto;
-} /*# sourceMappingURL=style.css.map */
+}
+.home-page .section .list-shop .hear-shop h1 {
+  color: black;
+}
+.home-page .section .list-shop .menu-shop {
+  background-color: #fff;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.home-page .section .list-shop .menu-shop .list-item {
+  height: 100%;
+  overflow: hidden;
+  touch-action: pan-y;
+}
+.home-page .section .list-shop .menu-shop .list-item .item-book {
+  width: 140%;
+  transform: translate(0px, 0px);
+  transition: all 500ms ease 0s;
+  width: 140%;
+  transform: translate(0px, 0px);
+  display: flex;
+  position: relative;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  visibility: visible;
+}
+.home-page .section .list-shop .menu-shop .list-item .item-book .img-item {
+  width: 10%;
+}
+.home-page .section .list-shop .menu-shop .list-item .item-book .img-item .img {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  border: 1px solid #d3d3d3;
+  margin: 2px;
+}
+.home-page .section .list-shop .menu-shop .list-item .item-book .img-item .img img {
+  height: 150px;
+  width: 150px;
+}
+.home-page .section .list-shop .menu-shop .list-item .item-book .img-item .img:hover {
+  transform: translateZ(0);
+  z-index: 1;
+  border-color: rgba(0, 0, 0, 0.52);
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+}/*# sourceMappingURL=style.css.map */
